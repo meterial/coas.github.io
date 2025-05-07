@@ -133,37 +133,19 @@ body {
   font-size: smaller;
 }
 
-
-/* 新增轮播图片居中样式 */
 .results-carousel .item {
-	display: flex;
-	flex-direction: column;
-	align-items: center;  /* 水平居中 */
-	justify-content: center; /* 垂直居中（可选） */
+	margin: 5px;
+	overflow: hidden;
+	padding: 20px;
+	font-size: 0;
+  
+	display: flex; /* 启用 Flexbox */
+	justify-content: center; /* 水平居中 (如果需要) */
+	align-items: center; /* 垂直居中 */
   }
   
   .results-carousel .item img {
-	max-width: 100%;
-	height: auto;
-	margin: 0 auto; /* 双重保障居中 */
-  }
-  
-  /* 确保父容器宽度足够 */
-  .container {
-	max-width: 1150px; /* 等于或略大于图片宽度 */
-	margin: 0 auto;
-  }
-  
-  /* 如果轮播需要滑动效果可能需要额外调整 */
-  .carousel {
-	overflow: hidden;
-	width: 100%;
-  }
-
-  /* 响应式处理（可选） */
-@media (max-width: 1000px) {
-	.results-carousel .item img {
-	  max-width: 95vw;            /* 在小屏幕上自动缩放 */
-	  height: auto;               /* 保持比例 */
-	}
+	max-width: 100%; /* 确保图片不会超出容器宽度 */
+	max-height: 100%; /* 确保图片不会超出容器高度 */
+	object-fit: contain; /* 保持图片比例，并在容器内完整显示，可能留白 */
   }
