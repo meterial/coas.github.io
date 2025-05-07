@@ -134,17 +134,18 @@ body {
 }
 
 .results-carousel .item img {
-display: block; /* 使其成为块级元素 */
-max-width: 100%; /* 保证图片宽度不会超过父容器 */
-height: auto;    /* 让高度根据宽度自适应，保持宽高比 */
-max-height: 400px; /* 设置图片的最大高度 */
-margin-left: auto; /* 实现水平居中 */
-margin-right: auto; /* 实现水平居中 */
-}
-
-.results-carousel .item {
-display: flex; /* 使用 Flexbox 布局 */
-flex-direction: column; /* 让图片和标题垂直排列 */
-align-items: center; /* 让图片和标题在水平方向居中 */
-text-align: center; /* 确保标题文本也居中 */
-}
+	display: flex; /* 使用 Flexbox 布局 */
+	max-width: 100%; /* 保证图片宽度不会超过父容器 */
+	height: auto;    /* 让高度根据宽度自适应，保持宽高比 */
+	max-height: 400px; /* 设置图片的最大高度 */
+	margin: auto;  /* 水平和垂直居中图片 */
+	justify-content: center; /* 水平居中 */
+	align-items: center; /* 垂直居中 */
+  }
+  
+  .results-carousel .item {
+	display: flex; /* 使用 Flexbox 布局 */
+	flex-direction: column; /* 让图片和标题垂直排列 */
+	align-items: center; /* 让图片和标题在水平方向居中 */
+	text-align: center; /* 确保标题文本也居中 */
+  }
