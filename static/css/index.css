@@ -133,3 +133,8 @@ body {
 .eql-cntrb { 
   font-size: smaller;
 }
+
+.table td:nth-child(1) { /* 选择第一列的数据单元格 */
+    display: flex;
+    align-items: center; /* 垂直居中内容 */
+}
