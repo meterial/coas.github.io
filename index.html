@@ -153,30 +153,32 @@
 
 
 <!-- image -->
-<section class="hero is-small">
-	<div class="hero-body">
-	  <div class="container" style="text-align: center;">
-		<img src="static/images/coas_method.jpg" alt="图片描述" style="max-width: 100%; height: auto;">
-		<h2 class="subtitle has-text-centered" style="margin-top: 20px; max-width: 1000px; margin-left: auto; margin-right: auto;">
-			<small> CoAS: The composite audio steganographic scheme based on diffusion models. The Gaussian vector obtained from the secret message mapping is applied to the denoising process of the diffusion model, and the audio becomes the cover of the secret message. At the same time, the shared parameters required by the above process are embedded in the text corresponding to the audio and guide the generation process.</small> 
-		</h2>
-	  </div>
-	</div>
-  </section>
+<section class="section">
+    <h2 class="title is-2 has-text-centered">Method</h2>
 
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container" style="text-align: center;">
+                <img src="static/images/coas_method.jpg" alt="图片描述" style="max-width: 100%; height: auto;">
+                <h2 class="subtitle has-text-centered" style="margin-top: 20px; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                    <small> CoAS: The composite audio steganographic scheme based on diffusion models. The Gaussian vector obtained from the secret message mapping is applied to the denoising process of the diffusion model, and the audio becomes the cover of the secret message. At the same time, the shared parameters required by the above process are embedded in the text corresponding to the audio and guide the generation process.</small>
+                </h2>
+            </div>
+        </div>
+    </section>
 
-  </h2>
-  <section class="hero is-small">
-	<div class="hero-body">
-	  <div class="container" style="text-align: center;">
-		<img src="static/images/mapping.jpg" alt="图片描述" style="max-width: 100%; height: auto;">
-		<h2 class="subtitle has-text-centered" style="margin-top: 20px; max-width: 1000px; margin-left: auto; margin-right: auto;">
-			<small>Message Mapping: During the message embedding process, the secret message is firstly divided into a set of segments $s_i$ according to the value of payload $p$ (with $p$=3 in the figure), and the components of the corresponding Gaussian vector $\boldsymbol{z}$ are calculated and obtained. Finally, the Gaussian vector $\boldsymbol{z}$ is applied to the generation process of the stego audio. On the other hand, in the extraction process, the receiver, after extracting the same Gaussian vector from the stego audio, can obtain the same message segments. From this, the secret message can be entirely extracted.
-			</small>
-		</h2>
-	  </div>
-	</div>
-  </section>
+    <section class="hero is-small">
+        <div class="hero-body">
+            <div class="container" style="text-align: center;">
+                <img src="static/images/mapping.jpg" alt="图片描述" style="max-width: 100%; height: auto;">
+                <h2 class="subtitle has-text-centered" style="margin-top: 20px; max-width: 1000px; margin-left: auto; margin-right: auto;">
+                    <small>Message Mapping: During the message embedding process, the secret message is firstly divided into a set of segments $s_i$ according to the value of payload $p$ (with $p$=3 in the figure), and the components of the corresponding Gaussian vector $\boldsymbol{z}$ are calculated and obtained. Finally, the Gaussian vector $\boldsymbol{z}$ is applied to the generation process of the stego audio. On the other hand, in the extraction process, the receiver, after extracting the same Gaussian vector from the stego audio, can obtain the same message segments. From this, the secret message can be entirely extracted.
+                    </small>
+                </h2>
+            </div>
+        </div>
+    </section>
+</section>
 <!-- End image -->
 
 
