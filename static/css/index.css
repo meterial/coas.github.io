@@ -134,4 +134,28 @@ body {
 }
 
 
-
+/* 新增轮播图片居中样式 */
+.results-carousel .item {
+	display: flex;
+	flex-direction: column;
+	align-items: center;  /* 水平居中 */
+	justify-content: center; /* 垂直居中（可选） */
+  }
+  
+  .results-carousel .item img {
+	max-width: 100%;
+	height: auto;
+	margin: 0 auto; /* 双重保障居中 */
+  }
+  
+  /* 确保父容器宽度足够 */
+  .container {
+	max-width: 1200px; /* 等于或略大于图片宽度 */
+	margin: 0 auto;
+  }
+  
+  /* 如果轮播需要滑动效果可能需要额外调整 */
+  .carousel {
+	overflow: hidden;
+	width: 100%;
+  }
