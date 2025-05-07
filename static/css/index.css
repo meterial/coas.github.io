@@ -150,7 +150,7 @@ body {
   
   /* 确保父容器宽度足够 */
   .container {
-	max-width: 1200px; /* 等于或略大于图片宽度 */
+	max-width: 1150px; /* 等于或略大于图片宽度 */
 	margin: 0 auto;
   }
   
