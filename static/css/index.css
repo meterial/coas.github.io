@@ -159,3 +159,11 @@ body {
 	overflow: hidden;
 	width: 100%;
   }
+
+  /* 响应式处理（可选） */
+@media (max-width: 1000px) {
+	.results-carousel .item img {
+	  max-width: 95vw;            /* 在小屏幕上自动缩放 */
+	  height: auto;               /* 保持比例 */
+	}
+  }
