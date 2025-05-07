@@ -132,20 +132,3 @@ body {
 .eql-cntrb { 
   font-size: smaller;
 }
-
-.results-carousel .item {
-	margin: 5px;
-	overflow: hidden;
-	padding: 20px;
-	font-size: 0;
-  
-	display: flex; /* 启用 Flexbox */
-	justify-content: center; /* 水平居中 (如果需要) */
-	align-items: center; /* 垂直居中 */
-  }
-  
-  .results-carousel .item img {
-	max-width: 100%; /* 确保图片不会超出容器宽度 */
-	max-height: 100%; /* 确保图片不会超出容器高度 */
-	object-fit: contain; /* 保持图片比例，并在容器内完整显示，可能留白 */
-  }
